@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     This test project contains only a pom.xml where the project has no explicit
+     encoding guidance but the pom.xml does explicitly state its own encoding.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.victorschappert</groupId>
+    <artifactId>notabs-maven-plugin.test.pom_only_utf8</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>POM-Only UTF-8</name>
+    <description>Test case consisting of a single UTF-8 pom.xml</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.victorschappert</groupId>
+                <artifactId>notabs-maven-plugin</artifactId>
+                <configuration>
+                    <subglobs>
+                        <subglob>pom.xml</subglob>
+                    </subglobs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
