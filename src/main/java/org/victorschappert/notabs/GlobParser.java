@@ -132,11 +132,6 @@ final class GlobParser {
                     pattern.append("/?");
                 }
                 return next();
-                // } else if ('/' == c && hadNova) {
-                // hasSep = true;
-                // return next();
-                // } else if ('/' == c && !hadNova) {
-                // return c;
             } else {
                 throw error(ERR_TWOSTARS_NOT_ADJACENT_TO_SEP);
             }
